@@ -1,0 +1,14 @@
+## Git stash command
+## to save your work without commiting especially wehen you are switchig between branches
+
+## to stash your staged files 
+git stash
+
+## to stash your unstaged files
+git stash -u 
+
+## to work agin with the stashed files
+git stash pop
+
+Note: if not stashed the files in one branch will be reflected in 
+other branches and create confusion.
