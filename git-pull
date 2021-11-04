@@ -1,0 +1,4 @@
+## To pull the latest changes from the remote repository to the local
+git pull origin master
+git pull origin main
+git pull  <url>
