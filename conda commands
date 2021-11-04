@@ -1,0 +1,72 @@
+Conda commands:
+## install miniconda or Anaconda
+$ bash Miniconda3-latest-Linux-x86_64.sh
+$ bash Anaconda-latest-Linux-x86_64.sh
+
+## Verify that conda is installed and running on your system by typing:
+$ conda --version
+
+## Update conda to the current version. 
+$ conda update conda
+
+## See list of packages in the current environment
+$ conda list
+
+## Display Conda environment information
+$ conda info
+
+## List all existing environments; To see a list of all your environments, type:
+$ conda info --envs
+$ conda inv list
+
+## Create a new environment
+$ conda create --name da35
+
+## Activate your new environment
+$ conda activate da35
+
+## Installing Packages
+$ conda install numpy
+
+##Create a new environment and install a package in it.
+$ conda create --name mamoenv pytorch
+
+## Create a new environment named "snakes" that contains Python 3.9:
+$ conda create --name snakes python=3.9
+
+## Change your current environment back to the default (base): 
+$ conda activate
+or
+$ conda activate base
+
+## Deactivate/Change your active environment
+$ conda deactivate
+$ conda activate base or fa35
+
+## Removing environments:
+$ conda env remove -n da35   OR
+$conda env remove --name da35
+
+## Check which packages are available and look for a specific package and install it.
+$ conda search python
+
+
+## Create new environment called 'mamoenv' and install pyton 3.5 and numpy
+$ conda create --name mamoenv python=3.5 numpy
+
+## Remove the entire Miniconda install directory with:
+	# entire Miniconda install directory
+$ rm -rf ~/miniconda
+	#OPTIONAL: Edit ~/.bash_profile to remove the Miniconda directory from your PATH environment variable.
+	#OPTIONAL: Remove the following hidden file and folders that may have been created in the home directory:
+		.condarc file
+		.conda directory
+		.continuum directory   By running:
+$ rm -rf ~/.condarc ~/.conda ~/.continuum
+
+
+video ideas :
+
+1. what are python distributions? explain, and give distribution examples...like Anaconda and miniconda etc
+
+
