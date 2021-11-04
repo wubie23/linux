@@ -1,0 +1,14 @@
+## create a branch
+git branch <branch name>
+
+## see available branches
+git branch
+
+## delete a branch
+git branch -D <branch name>
+
+## swith to the requires branch
+git checkout <name of the branch>
+
+## check the status of the branch
+git status
