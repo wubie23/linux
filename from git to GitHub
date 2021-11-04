@@ -1,0 +1,62 @@
+# How to make local git repositoris available to the rest of the worls on GitHub:
+## create a directory:
+wub@Eshet:~$ mkdir git-tutorials
+
+## change directory to this folder
+wub@Eshet:~$ cd git-tutorials/
+
+## list all files and directories including hidden files
+wub@Eshet:~/git-tutorials$ ll
+
+## Initialize git  repository for your project in the local system
+wub@Eshet:~/git-tutorials$ git init
+Initialized empty Git repository in /home/wub/git-tutorials/.git/
+
+## list all shows .git directory is created
+.git/
+
+## Now let us create files in our directory
+wub@Eshet:~/git-tutorials$ nano git-commands.txt
+
+## check the status of our files
+wub@Eshet:~/git-tutorials$ git status
+
+my files are not yet tracked
+
+## add the files to the staging area
+wub@Eshet:~/git-tutorials$ git add git-commands.txt
+or git add .
+
+## check agin the status of the files ... and now they are ready to commit
+wub@Eshet:~/git-tutorials$ git status
+
+## saving the files in the git file system .i.e commiting
+wub@Eshet:~/git-tutorials$ git commit -m "my first commit of git-command.txt"
+
+## If you haven't yet configured your identity you need to do so
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+(Omit --global to set the identity only in this repository.)
+
+wub@Eshet:~/git-tutorials$ git config user.name "wubie23"
+wub@Eshet:~/git-tutorials$ git config user.email "wubieee@gmail.com"
+
+## saving the files in the git file system .i.e commiting
+wub@Eshet:~/git-tutorials$ git commit -m "my first commit of git-command.txt"
+
+## Syncing Repository: once everything is ready in our local, we can push the changes to our 
+remote repository---to make it available to the world.
+
+In order to do this we need to have  a github account. and create a new repository called git-tutorials
+
+
+git remote add origin <url of my repository>
+wub@Eshet:~/git-tutorials$ git remote add origin https://github.com/wubie23/git-tutorials.git
+
+## you can check the config files to see remote origin added too.
+wub@Eshet:~/git-tutorials$ git config -e
+
+## to push the changes from local to the remote repository:
+wub@Eshet:~/git-tutorials$ git push origin master
+
+============
