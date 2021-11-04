@@ -7,7 +7,7 @@ git stash
 ## to stash your unstaged files
 git stash -u 
 
-## to work agin with the stashed files
+## to work again with the stashed files
 git stash pop
 
 Note: if not stashed the files in one branch will be reflected in 
