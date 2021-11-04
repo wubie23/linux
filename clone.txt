@@ -1,0 +1,4 @@
+# We can also clone a remote repository to our local repository:
+
+## create a dirctory  on your local computer to clone the remote files 
+wub@Eshet:~/Linux$ git clone https://github.com/wubie23/linux.git
