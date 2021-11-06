@@ -1,0 +1,3 @@
+# To revert a commit to a previous version:
+git revert <commit id>
+the commit id can be found from the git log
