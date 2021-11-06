@@ -1,0 +1,3 @@
+## doing comparisons between two files
+git diff <commit id-1> <commit id-2>
+
