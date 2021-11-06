@@ -1,0 +1,8 @@
+## To clone a remote files  in to local macine:
+git clone <url of the repository>
+
+## To pull the latest changes from the remote repository to the local
+git pull  <url of the repository>
+
+## Pushing the changes from local repository to a remote repository
+git push <url of the GitHub repository>
